@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbus A320-200</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="plane">
+      <header>
+        <h1>Airbus A320-200</h1>
+      </header>
+
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+      </nav>
+
+      <img
+        src="img/airbus-a320-200.jpg"
+        alt="Plane Image"
+        onclick="openImageInNewWindow(this.src)"
+      />
+
+      <div class="plane-description">
+        <h2>Описание</h2>
+        <p>
+          Airbus A320-200 — узкофюзеляжный авиалайнер семейства A320. Улучшенная версия A320-100 с 
+          увеличенной дальностью и wingtip fences. Первый в мире пассажирский самолёт с цифровой системой 
+          fly-by-wire. Используется для коротких и средних рейсов.
+        </p>
+      </div>
+
+      <div class="plane-specifications">
+        <h2>Характеристики</h2>
+        <ul>
+          <li>Пассажировместимость: 150 (2 класса) / до 186</li>
+          <li>Дальность: 6100 км</li>
+          <li>Крейсерская скорость: Mach 0.84</li>
+          <li>Длина: 37,6 м</li>
+          <li>Размах крыла: 33,91 м</li>
+          <li>Максимальная взлётная масса: до 93,5 т</li>
+          <li>Двигатели: 2 × CFM56-5 / IAE V2500</li>
+        </ul>
+
+        <h2>Особенности</h2>
+        <ul>
+          <li>Пионер fly-by-wire с боковыми рукоятками</li>
+          <li>Более широкая кабина, чем у конкурентов</li>
+          <li>Sharklets — экономия топлива до 3,5 %</li>
+          <li>Улучшенный интерьер 2007 года с LED-освещением и большими багажными полками</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function openImageInNewWindow(src) {
+        window.open(src);
+      }
+    </script>
+  </body>
+  <footer>&copy; 2026 Все права защищены</footer>
+</html>

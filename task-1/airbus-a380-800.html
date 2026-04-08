@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbus A380-800</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="plane">
+      <header>
+        <h1>Airbus A380-800</h1>
+      </header>
+
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+      </nav>
+
+      <img
+        src="img/airbus-a380-800.jpg"
+        alt="Plane Image"
+        onclick="openImageInNewWindow(this.src)"
+      />
+
+      <div class="plane-description">
+        <h2>Описание</h2>
+        <p>
+          Airbus A380-800 — крупнейший в мире пассажирский авиалайнер с полноразмерной двухпалубной 
+          конструкцией. Создан для маршрутов hub-and-spoke. Производство завершено в 2021 году.
+        </p>
+      </div>
+
+      <div class="plane-specifications">
+        <h2>Характеристики</h2>
+        <ul>
+          <li>Пассажировместимость: 525 (3 класса) / до 853</li>
+          <li>Дальность: 14 800 км (8000 nmi)</li>
+          <li>Крейсерская скорость: Mach 0.85</li>
+          <li>Размах крыла: ~80 м</li>
+          <li>Максимальная взлётная масса: до 575 т</li>
+          <li>Двигатели: 4 × Trent 900 / GP7200</li>
+        </ul>
+
+        <h2>Особенности</h2>
+        <ul>
+          <li>Полноценная двухпалубная кабина (на 40 % больше площади, чем у 747)</li>
+          <li>Тишина в салоне и повышенное давление</li>
+          <li>Гибкие конфигурации (душ, бары, лаунджи у некоторых операторов)</li>
+          <li>Передовые композитные материалы и fly-by-wire</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function openImageInNewWindow(src) {
+        window.open(src);
+      }
+    </script>
+  </body>
+  <footer>&copy; 2026 Все права защищены</footer>
+</html>

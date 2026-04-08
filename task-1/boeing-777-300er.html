@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boeing 777-300ER</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="plane">
+      <header>
+        <h1>Boeing 777-300ER</h1>
+      </header>
+
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+      </nav>
+
+      <img
+        src="img/boeing-777-300er.jpg"
+        alt="Plane Image"
+        onclick="openImageInNewWindow(this.src)"
+      />
+
+      <div class="plane-description">
+        <h2>Описание</h2>
+        <p>
+          Boeing 777-300ER — дальнемагистральный широкофюзеляжный авиалайнер второго поколения. 
+          Лучший продаваемый вариант 777. Основной самолёт Emirates для трансокеанских рейсов.
+        </p>
+      </div>
+
+      <div class="plane-specifications">
+        <h2>Характеристики</h2>
+        <ul>
+          <li>Пассажировместимость: 365 (3 класса) / до 550</li>
+          <li>Дальность: 13 650 км (7370 nmi)</li>
+          <li>Крейсерская скорость: Mach 0.84</li>
+          <li>Длина: 63,73 м</li>
+          <li>Размах крыла: 64,80 м</li>
+          <li>Максимальная взлётная масса: 351 533 кг</li>
+          <li>Двигатели: 2 × GE90-115B (513 кН)</li>
+        </ul>
+
+        <h2>Особенности</h2>
+        <ul>
+          <li>Самые низкие эксплуатационные затраты среди четырёхдвигательных конкурентов</li>
+          <li>Композитные стабилизаторы</li>
+          <li>Просторный Signature Interior с большими окнами</li>
+          <li>Увеличенная дальность благодаря raked wingtips</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function openImageInNewWindow(src) {
+        window.open(src);
+      }
+    </script>
+  </body>
+  <footer>&copy; 2026 Все права защищены</footer>
+</html>
