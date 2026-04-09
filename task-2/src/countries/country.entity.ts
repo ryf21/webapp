@@ -1,6 +1,6 @@
 export class Country {
     id: number;
     name: string;
-    price: number;
+    continent: number;
     type: string;
 }
