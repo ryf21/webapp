@@ -3,37 +3,37 @@ import { DatasourceService } from "src/datasource/datasource.service";
 import { Country } from "./country.entity";
 
 @Injectable()
-export class SouvenirsService {
+export class CountriesService {
     constructor(private readonly datasourceService: DatasourceService) {}
 
     create(country: Country) {
-        this.datasourceService.getSouvenirs().push(country);
+        this.datasourceService.getCountries().push(country);
         return country;
     }
 
     findOne(id: number) {
     return this.datasourceService
-      .getSouvenirs()
+      .getCountries()
       .find((country) => country.id === id);
     }
 
     findAll(): Country[] {
-        return this.datasourceService.getSouvenirs();
+        return this.datasourceService.getCountries();
     }
 
-    update(id: number, updatedSouvenir: Country) {
+    update(id: number, updatedCountry: Country) {
         const index = this.datasourceService
-        .getSouvenirs()
+        .getCountries()
         .findIndex((country) => country.id === id);
-        this.datasourceService.getSouvenirs()[index] = updatedSouvenir;
-        return this.datasourceService.getSouvenirs()[index];
+        this.datasourceService.getCountries()[index] = updatedCountry;
+        return this.datasourceService.getCountries()[index];
     }
 
     remove(id: number) {
         const index = this.datasourceService
-        .getSouvenirs()
+        .getCountries()
         .findIndex((country) => country.id === id);
-        this.datasourceService.getSouvenirs().splice(index, 1);
+        this.datasourceService.getCountries().splice(index, 1);
         return HttpStatus.OK;
     }
 

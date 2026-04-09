@@ -1,11 +1,11 @@
 import { Module } from "@nestjs/common";
 import { Country } from "./country.entity";
 import { DatasourceModule } from "src/datasource/datasource.module";
-import { SouvenirsController } from "./countries.controller";
-import { SouvenirsService } from "./countries.service";
+import { CountriesController } from "./countries.controller";
+import { CountriesService } from "./countries.service";
 @Module({
-    controllers: [SouvenirsController],
-    providers:[SouvenirsService],
+    controllers: [CountriesController],
+    providers:[CountriesService],
     imports: [DatasourceModule]
 })
-export class SouvenirsModule{}
+export class CountriesModule{}

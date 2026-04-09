@@ -18,7 +18,7 @@ export class DatasourceService {
 
     private countries: Country[] = []
 
-    getSouvenirs(): Country[] {
+    getCountries(): Country[] {
         return this.countries;
     }
 }
