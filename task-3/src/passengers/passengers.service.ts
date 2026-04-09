@@ -27,6 +27,10 @@ export class PassengersService {
       id: In(passengerDto.countries),
     });
     passenger.countries = countries;
+    const airlines = await this.airlineRepository.findBy({
+      id: In(passengerDto.airlines),
+    });
+    passenger.airlines = airlines;
     await this.passengerRepository.save(passenger); //сохраняем объект Passenger в БД
     return passenger; //возвращаем объект Passenger
   }
